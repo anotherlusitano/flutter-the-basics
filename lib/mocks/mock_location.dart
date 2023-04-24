@@ -2,9 +2,9 @@ import '../models/location.dart';
 import '../models/location_fact.dart';
 
 mixin MockLocation implements Location {
-  static Location FetchAny() {
+  static Location fetchAny() {
     return Location(
-        name: 'Arashiyama Bamboo Grove, Kyoto, Japan',
+        name: 'Arashiyama Bamboo Grove',
         url:
             'https://cdn-images-1.medium.com/max/2000/1*vdJuSUKWl_SA9Lp-32ebnA.jpeg',
         facts: <LocationFact>[
