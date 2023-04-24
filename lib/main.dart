@@ -6,5 +6,10 @@ import 'mocks/mock_location.dart';
 void main() {
   final Location mockLocation = MockLocation.FetchAny();
 
-  return runApp(MaterialApp(home: LocationDetail(mockLocation)));
+  return runApp(
+    MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: LocationDetail(mockLocation),
+    ),
+  );
 }
