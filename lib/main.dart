@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
-import 'location_detail.dart';
+import 'location_list.dart';
 import 'mocks/mock_location.dart';
 
 void main() {
-  final mockLocation = MockLocation.fetchAny();
+  final mockLocations = MockLocation.fetchAll();
 
   return runApp(
     MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: LocationDetail(mockLocation),
+      home: LocationList(mockLocations),
     ),
   );
 }
